@@ -1,0 +1,16 @@
+Pesudocode
+
+declare variables playerSelection and computerSelection of type string that are initialized as undefined
+declare variables winCount and loseCount of type number that are initialized as 0
+declare array choices that contains all valid strings (rock, paper, & scissors)
+create getComputerSelection function that takes choices array as its input parameter and outputs a random string from within the array
+Initialize a for loop starting at 0 that checks if winCount or loseCount is less than 3 and increments sentry if true (sentry represents total number of rounds played)
+invoke getComputerSelection function and store return value in computerSelection variable
+prompt for user to enter a string and store result in playerSelection variable
+convert playerSelection to lowercase to make program caps insensitive
+if string is not "rock", "paper", or "scissors" send error message and reprompt user
+create function playRound that takes parameters playerSelection and computerSelection
+playRound function converts playerSelection input to lowercase, checks for winner against computerSelection variable, increments either the winCount or the loseCount variable, and exits function
+repeat loop until either winCount or loseCount === 3
+if winCount === 3 print victory message
+else print defeat message
