@@ -7,6 +7,10 @@ let choices = ["rock", "paper", "scissors"];
 for (i = 0; winCount != 3 && loseCount != 3; i++) {
     computerSelection = getComputerSelection();
     playerSelection = prompt("rock, paper, or scissors? Make your choice.");
+    if (playerSelection === null) {
+        alert("Game cancelled.");
+        break;
+    }
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissors") {
         playRound(playerSelection, computerSelection); 
