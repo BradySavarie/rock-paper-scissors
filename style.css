@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #525252;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(243, 243, 243);
+}
+
+.content {
+    box-shadow: 0 0 1rem #808080;
+    padding: 50px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    font-size: 2.25em;
+}
+
+.title #rock {
+    color: #DB1E35;
+}
+
+.title #paper {
+    color: #25A9E0;
+}
+
+.title #scissors {
+    color: #FFC21C;
+}
+
+.choices {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.choices button {
+    padding: 5px 20px;
+    margin: 20px 10px;
+    font-family: inherit;
+    font-size: 0.75em;
+    font-weight: bold;
+    background-color: white;
+    border-color: #525252;
+    border-radius: 10px;
+    transition: all .07s ease;
+}
+
+.choices #rock:hover {
+    color: #DB1E35;
+    cursor: pointer;
+}
+
+.choices #paper:hover {
+    color: #25A9E0;
+    cursor: pointer;
+}
+
+.choices #scissors:hover {
+    color: #FFC21C;
+    cursor: pointer;
+}
+
+.rockselected {
+    transform: scale(1.1);
+    border-color: #DB1E35;
+    box-shadow: 0 0 1rem #DB1E35;
+  }
+
+  .paperselected {
+    transform: scale(1.1);
+    border-color: #25A9E0;
+    box-shadow: 0 0 1rem #25A9E0;
+  }
+
+  .scissorsselected {
+    transform: scale(1.1);
+    border-color: #FFC21C;
+    box-shadow: 0 0 1rem #FFC21C;
+  }
+
+.results {
+    text-align: center;
+}
+
+.results h3 {
+    font-size: 1.5em;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 25px 0px;
+    gap: 30px;
+    width: 100%;
+}
+
+.scores {
+    font-weight: bold;
+}
+
+.playAgainButton:hover {
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+}

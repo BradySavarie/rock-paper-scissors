@@ -1,8 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
     <meta charset="utf-8">
     <Title>Rock Paper Scissors</Title>
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
 </head>
+
+<body>
+    <div class="container" id="container">
+        <div class="content">
+            <div class="title">
+                <h1 id="rock">Rock,</h1>
+                <h1 id="paper">Paper,</h1>
+                <h1 id="scissors">Scissors!</h1>
+            </div>
+            <div class="choices">
+                <h2>Choose Your Weapon</h2>
+                <button id="rock">Rock ✊</button>
+                <button id="paper">Paper ✋</button>
+                <button id="scissors">Scissors ✌</button>
+            </div>
+            <div class="results">
+                <h3 id="outcome">First to Score 5 Points Wins</h3>
+                <div class="selections">
+                    <p id="psel"></p>
+                    <p id="csel"></p>
+                </div>
+                <div class="scores">
+                    <p id="player">Player Score: 0</p>
+                    <p id="comp">Computer Score: 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

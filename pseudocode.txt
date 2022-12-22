@@ -1,18 +1,26 @@
-Pseudocode
+JavaScript Pseudocode
 
-declare variables playerSelection and computerSelection of type string that are initialized as undefined
-declare variables winCount and loseCount of type number that are initialized as 0
-declare array choices that contains all valid strings (rock, paper, & scissors)
-create getComputerSelection function that takes choices array as its input parameter and outputs a random string from within the array
-initialize for loop starting at 0 that checks if winCount and loseCount are not equal to 3 and increments sentry if true
-invoke getComputerSelection function and store return value in computerSelection variable
-prompt for user to enter a string and store result in playerSelection variable
-if user input is null print cancellation message and break
-convert playerSelection to lowercase to make program caps insensitive
-if user input is a valid response invoke playRound function
-else print error message and return
-create function playRound that takes parameters playerSelection and computerSelection
-playRound function checks for winner against computerSelection variable, increments either the winCount or the loseCount variable, and returns
-repeat loop until either winCount or loseCount === 3
-if loseCount === 3 print defeat message
-else if winCount === 3 print victory message
+declare playerSelection & compSelection as undefined
+declare playerScore & compScore and initialize to 0
+declare choices array and initialize with 3 strings ("Rock", "Paper", "Scissors")
+select all buttons on the document and store in a variable as a nodelist object
+iterate through each button element in the nodelist
+add an eventlistener for clicks that when triggered stores the buttons text content in the playerSelection variable and calls a playRound function with playerSelection as the input parameter
+write function getComputerSelection that returns a random sring from the choices array
+write function playRound that executes the following sequence of events:
+    playRound calls getComputerSelection function and stores return value in compSelection variable
+    playRound checks for tie, win or loss
+    playRound increments playerScore if winner, else increments compScore if winner, else tie
+    playRound displays outcome to user (tie, win, or lose)
+    playRound calls a scoreCard function with playerScore and compScore as the input parameters
+write scoreCard function that displays round selections and running scores
+When either score variable reaches 5 call an announceResults function
+Write announceResults function that executes the following sequence of events:
+    announceResults clears choices div and removes selections div and results header
+    announceResults checks which variable reached 5 wins first
+    announceResults creates new div to display results
+    announceResults creates new button to ask user to play again
+
+#FFC21C
+#DB1E35
+#25A9E0
