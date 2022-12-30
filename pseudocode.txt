@@ -20,7 +20,3 @@ Write announceResults function that executes the following sequence of events:
     announceResults checks which variable reached 5 wins first
     announceResults creates new div to display results
     announceResults creates new button to ask user to play again
-
-#FFC21C
-#DB1E35
-#25A9E0
